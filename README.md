@@ -26,7 +26,7 @@ or download the css on github and include in your project.
 .td-5 { transition-duration: 5s; }
 .td-i { transition-duration: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .td-1-ns { transition-duration: 120ms; }
   .td-2-ns { transition-duration: .3s; }
   .td-3-ns { transition-duration: .6s; }
@@ -35,7 +35,7 @@ or download the css on github and include in your project.
   .td-i-ns { transition-duration: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .td-1-m { transition-duration: 120ms; }
   .td-2-m { transition-duration: .3s; }
   .td-3-m { transition-duration: .6s; }
@@ -44,7 +44,7 @@ or download the css on github and include in your project.
   .td-i-m { transition-duration: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .td-1-l { transition-duration: 120ms; }
   .td-2-l { transition-duration: .3s; }
   .td-3-l { transition-duration: .6s; }
