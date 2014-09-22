@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-transition-duration)
 ## File Size
 
 1.1K transition-duration.css
-912B transition-duration.min.css
+912B transition-duration.min.css 
+208B minified and gzipped
 
 ## The Code
 ```
