@@ -1,7 +1,7 @@
 {
   "name": "css-transition-duration",
   "style": "transition-duration.css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-transition-duration",
   "description": "Css module of single purpose classes for transition duration",
   "keywords": [
