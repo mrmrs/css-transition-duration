@@ -10,12 +10,12 @@
 .td-i { transition-duration: inherit; }
 
 @media screen and (min-width: 48em) {
-  .td-1-ns { transition-duration: 120ms; }
-  .td-2-ns { transition-duration: .3s; }
-  .td-3-ns { transition-duration: .6s; }
-  .td-4-ns { transition-duration: 1s; }
-  .td-5-ns { transition-duration: 5s; }
-  .td-i-ns { transition-duration: inherit; }
+  .td-1-s { transition-duration: 120ms; }
+  .td-2-s { transition-duration: .3s; }
+  .td-3-s { transition-duration: .6s; }
+  .td-4-s { transition-duration: 1s; }
+  .td-5-s { transition-duration: 5s; }
+  .td-i-s { transition-duration: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
