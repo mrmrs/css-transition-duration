@@ -9,7 +9,7 @@
 .td-5 { transition-duration: 5s; }
 .td-i { transition-duration: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .td-1-s { transition-duration: 120ms; }
   .td-2-s { transition-duration: .3s; }
   .td-3-s { transition-duration: .6s; }
@@ -18,7 +18,7 @@
   .td-i-s { transition-duration: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .td-1-m { transition-duration: 120ms; }
   .td-2-m { transition-duration: .3s; }
   .td-3-m { transition-duration: .6s; }
@@ -27,7 +27,7 @@
   .td-i-m { transition-duration: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .td-1-l { transition-duration: 120ms; }
   .td-2-l { transition-duration: .3s; }
   .td-3-l { transition-duration: .6s; }
