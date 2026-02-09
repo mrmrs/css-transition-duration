@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-transition-duration.css');
+const srcFile = path.join(__dirname, 'src', 'transition-duration.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-transition-duration.css',
+  filename: 'transition-duration.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-transition-duration.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'transition-duration.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-transition-duration.css',
+  filename: 'transition-duration.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-transition-duration.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'transition-duration.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-transition-duration.css     ${unminified.length} bytes`);
-console.log(`  dist/css-transition-duration.min.css ${minified.length} bytes`);
+console.log(`  dist/transition-duration.css     ${unminified.length} bytes`);
+console.log(`  dist/transition-duration.min.css ${minified.length} bytes`);
