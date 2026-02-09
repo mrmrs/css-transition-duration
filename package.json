@@ -1,38 +1,44 @@
 {
   "name": "css-transition-duration",
-  "style": "transition-duration.css",
-  "version": "1.0.6",
-  "homepage": "http://github.com/mrmrs/css-transition-duration",
-  "description": "Css module of single purpose classes for transition duration",
+  "version": "2.0.0",
+  "description": "Functional CSS for transition-duration",
+  "style": "dist/transition-duration.css",
+  "main": "dist/transition-duration.css",
+  "exports": {
+    ".": "./dist/transition-duration.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "transition-duration"
+    "transition-duration",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-transition-duration": {
+  "homepage": "https://github.com/mrmrs/css-transition-duration",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-transition-duration.git"
+    "url": "https://github.com/mrmrs/css-transition-duration.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-transition-duration/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-transition-duration/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
